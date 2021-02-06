@@ -69,7 +69,7 @@ public class SpellChecker {
 
     public void print(){
         if(wordsThatDoNotMatch.isEmpty()){
-            System.out.println("Good news! There are no incorrect words! Correct sentence has been stored in 'correctedSentence.txt'\n");
+            System.out.println("Good news! There are no incorrect words! Correct sentence has been stored in 'outputSentence.txt'\n");
         }
         else {
             System.out.print("Words that are invalid: [");

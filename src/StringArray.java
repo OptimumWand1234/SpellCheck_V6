@@ -103,7 +103,7 @@ public class StringArray{
     }
 
     public int indexOf(String s){
-        for(int index = 0; index < this.stringLibrary.length; index++){
+        for(int index = 0; index < size(); index++){
             if(this.stringLibrary[index].equals(s)){
                 return index;
             }
