@@ -110,8 +110,10 @@ public class StringArray{
     }
 
     public int indexOf(String s){
+        s = s.toLowerCase();
         for(int index = 0; index < size(); index++){
-            if(this.stringLibrary[index].equals(s)){
+            String stringToLookAt = this.stringLibrary[index].toLowerCase();
+            if(stringToLookAt.equals(s)){
                 return index;
             }
         }
@@ -120,7 +122,7 @@ public class StringArray{
 
     public int indexOfMatchingCase(String s){
         for(int index = 0; index < size(); index++){
-            if(containsMatchingCase(s)){
+            if(this.stringLibrary[index].equals(s)){
                 return index;
             }
         }
